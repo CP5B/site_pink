@@ -20,7 +20,7 @@ html {
 
 .hero-image {
   width: 100%;
-  max-width: 400px; /* You can adjust this max width */
+  max-width: 550px; /* You can adjust this max width */
   height: auto;
   display: block;
   margin: 0 auto 5px auto; /* centers image and adds spacing below */

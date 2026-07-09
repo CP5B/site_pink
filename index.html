@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div id="navbar-placeholder"></div>
+
+    <h1>Welcome to the Home Page</h1>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
   <div class="content">
     <img src="https://sitefile.co/67f0d3a4438e6f6d4d4695ce/1743837707951_shoppinkimage2.webp" alt="Dress Shop Logo" class="hero-image">
     <h1>Welcome to Pink Threads</h1>

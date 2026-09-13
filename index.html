@@ -3,74 +3,549 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gradient Background</title>
-  <link rel="stylesheet" href="css/index.css">
+  <title>Shoppink Boutique | Quality Products at Affordable Prices</title>
+  
+  <!-- Site Icon / Favicon -->
+  <link rel="icon" type="image/png" href="https://shoppink.vzy.io/favicon.ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
 
-    <h1>Welcome to the Home Page</h1>
+  <!-- Header / Navigation Bar -->
+  <header id="navbar">
+    <a href="#" class="logo-link">
+      <span class="brand-name">SHOPPINK <span>BOUTIQUE</span></span>
+    </a>
+    <a href="#contact" class="btn btn-header">Inquire Now</a>
+  </header>
 
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            });
-    </script>
-  <div class="content">
-    <img src="https://sitefile.co/67f0d3a4438e6f6d4d4695ce/1743837707951_shoppinkimage2.webp" alt="Dress Shop Logo" class="hero-image">
-    <h1>Welcome to Pink Threads</h1>
-    <a class="scroll-btn">🡣</a>
-  </div>
-
-  <script>
-    document.querySelector('.scroll-btn').addEventListener('click', () => {
-      const nextSection = document.querySelector('#gallery');
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  </script>
-
-  <section class="gallery-section" id="gallery">
-    <h2>Featured Products</h2>
-    <p>Welcome to our apparel paradise, where fashion meets comfort in every stitch.</p>
-    <div class="gallery-container">
-      <div class="gallery-item">
-        <img src="https://sitefile.co/67f0d3a4438e6f6d4d4695ce/1743901700437_coralemberdress.webp" alt="Elegant Red Dress">
-        <p>Elegant Red Dress</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://sitefile.co/67f0d3a4438e6f6d4d4695ce/1743901741344_ivoryblissdress.webp" alt="Chic Pink Gown">
-        <p>Chic Pink Gown</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://sitefile.co/67f0d3a4438e6f6d4d4695ce/1743901741344_ivoryblissdress.webp" alt="Chic Pink Gown">
-        <p>Chic Pink Gown2</p>
-      </div>
-      <!-- Add more items here -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-tag">Welcome to Shoppink Boutique</span>
+      <h1>Bulacan's Go-To Shop for Clothing & Costume Rentals</h1>
+      <p>Find the perfect outfit for school, special events, cultural celebrations, and themed occasions. Enjoy quality products, budget-friendly prices, and a shopping experience you can trust.</p>
+      <a href="#featured" class="btn btn-hero">Explore Collection</a>
     </div>
   </section>
 
-  <footer class="wrap">
-    <section class="social">
-      <p>Follow us</p>
-                    <a href="https://google.com" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" height="27px" width="12px" viewBox="351.9 -0.3 256.3 557.2" enable-background="new 351.9 -0.3 256.3 557.2" xml:space="preserve" class="injected-svg svg" data-fallback="https://www.flaticon.com/free-icons/facebook">
-<path d="M608.1,0H529c0,0-123.4-12.7-123.4,120.2c0,28.5,0,53.8,0,53.8h-53.8v104.4h50.6v278.4h117.1V281.6h69.6L605,177.2h-82.3 v-44.3c0,0-6.3-34.8,34.8-34.8h50.6V0z"></path>
-</svg>
-        </a>
-                                <a href="https://google.com" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="27" viewBox="0 0 27 27" width="27" class="injected-svg svg" data-fallback="https://www.flaticon.com/free-icons/instagram"><path d="m9.00072698 13.5c0-2.4851777 2.01409532-4.50036349 4.49927302-4.50036349s4.5003635 2.01518579 4.5003635 4.50036349-2.0151858 4.5003635-4.5003635 4.5003635-4.49927302-2.0151858-4.49927302-4.5003635m-2.43283522 0c0 3.8286349 3.10347335 6.9321082 6.93210824 6.9321082 3.8286349 0 6.9321082-3.1034733 6.9321082-6.9321082 0-3.82863489-3.1034733-6.93210824-6.9321082-6.93210824-3.82863489 0-6.93210824 3.10347335-6.93210824 6.93210824m12.51857834-7.2069063c0 .89418417.7251616 1.62043619 1.6204362 1.62043619.8941842 0 1.6204362-.72625202 1.6204362-1.62043619s-.7251616-1.61934572-1.6204362-1.61934572-1.6204362.72516155-1.6204362 1.61934572m-11.04099352 18.1955574c-1.31619548-.0599758-2.03154282-.27916-2.50698708-.4645396-.63029079-.2453554-1.07956381-.537601-1.55282714-1.0097739-.47217286-.4721728-.76550889-.9214458-1.00977383-1.5517366-.18537964-.4754443-.40456381-1.1907916-.46453958-2.5069871-.06542811-1.4230614-.07851373-1.850525-.07851373-5.4556139 0-3.60508885.01417609-4.03146204.07851373-5.45561389.05997577-1.31619548.2802504-2.03045235.46453958-2.50698708.24535541-.63029079.53760097-1.07956381 1.00977383-1.55282714.47217286-.47217286.92144588-.76550889 1.55282714-1.00977383.47544426-.18537964 1.1907916-.40456381 2.50698708-.46453958 1.42306138-.06542811 1.85052504-.07851373 5.45452342-.07851373 3.6050889 0 4.031462.01417609 5.4556139.07851373 1.3161955.05997577 2.0304523.28025041 2.5069871.46453958.6302908.24426494 1.0795638.53760097 1.5528271 1.00977383.4721729.47217286.7644184.92253635 1.0097738 1.55282714.1853797.47544427.4045639 1.1907916.4645396 2.50698708.0654281 1.42415185.0785138 1.85052504.0785138 5.45561389 0 3.6039984-.0130857 4.031462-.0785138 5.4556139-.0599757 1.3161955-.2802504 2.0315428-.4645396 2.5069871-.2453554.6302908-.5376009 1.0795638-1.0097738 1.5517366-.4721728.4721729-.9225363.7644185-1.5528271 1.0097739-.4754443.1853796-1.1907916.4045638-2.5069871.4645396-1.4230614.0654281-1.850525.0785137-5.4556139.0785137-3.60399838 0-4.03146204-.0130856-5.45452342-.0785137m-.11122779-24.40686596c-1.43723748.06542811-2.41865913.29333602-3.27685784.62701938-.88764135.34458805-1.64006462.80694669-2.39139741 1.55718902-.75024233.75024232-1.21260097 1.50266559-1.55718902 2.39139741-.33368336.85819871-.56159127 1.83962036-.62701938 3.27685784-.06651858 1.43941842-.08178514 1.89959612-.08178514 5.56575121 0 3.6661551.01526656 4.1263328.08178514 5.5657512.06542811 1.4372375.29333602 2.4186591.62701938 3.2768578.34458805.8876414.80585622 1.6411551 1.55718902 2.3913975.75024232.7502423 1.50266559 1.2115105 2.39139741 1.557189.85928918.3336833 1.83962036.5615913 3.27685784.6270194 1.44050888.0654281 1.89959612.0817851 5.56575121.0817851 3.6672456 0 4.1263328-.0152666 5.5657512-.0817851 1.4372375-.0654281 2.4186591-.2933361 3.2768578-.6270194.8876414-.3456785 1.6400647-.8069467 2.3913975-1.557189.7502423-.7502424 1.2115105-1.5037561 1.557189-2.3913975.3336833-.8581987.5626817-1.8396203.6270194-3.2768578.0654281-1.4405089.0806946-1.8995961.0806946-5.5657512 0-3.66615509-.0152665-4.12633279-.0806946-5.56575121-.0654281-1.43723748-.2933361-2.41865913-.6270194-3.27685784-.3456785-.88764135-.8069467-1.64006462-1.557189-2.39139741-.7502424-.75024233-1.5037561-1.21260097-2.390307-1.55718902-.8592892-.33368336-1.8407108-.56268174-3.2768578-.62701938-1.4394184-.06542811-1.8995961-.08178514-5.5657512-.08178514-3.66724559 0-4.12633283.01526656-5.56684171.08178514"></path></svg>
-        </a>
-                </section>
-    <section id="copyright">
-                  <p class="copyright">© 2025 FLWorks - All rights reserved.<span> - </span><a href="https://flworks.page/terms-of-service">Terms of Service</a><span> - </span><a href="https://flworks.page/privacy-policy">Privacy Policy</a><span> - </span><a href="https://flworks.page/about-page">About</a></p>
-      <p class="by">Designed &amp; developed by <a href="https://flworks.page" title="Fine Line Works" target="_blank">FLWorks</a></p>
-    </section>
-  </footer>
-  
+  <!-- Featured Products Showcase -->
+  <section class="listings" id="featured">
+    <h2>Featured Products</h2>
+    <div class="grid-three-col">
+      
+      <div class="card glass-card">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Boutique Fashion Wear">
+          <span class="badge">Hot Arrival</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Trendy Chic Apparel</div>
+          <div class="card-price">Affordable Everyday Styles</div>
+          <p class="card-desc">High-quality fabrics and comfortable designs made for every occasion.</p>
+        </div>
+      </div>
+
+      <div class="card glass-card">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Beauty & Essentials">
+          <span class="badge">Best Seller</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Beauty & Lifestyle Essentials</div>
+          <div class="card-price">Special Promo Bundles</div>
+          <p class="card-desc">Handpicked items that add value, convenience, and joy to your routine.</p>
+        </div>
+      </div>
+
+      <div class="card glass-card">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?auto=format&fit=crop&w=800&q=80" alt="Boutique Accessories">
+          <span class="badge">Limited Stock</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Curated Fashion Accessories</div>
+          <div class="card-price">Budget-Friendly Prices</div>
+          <p class="card-desc">Complete your daily look with our stylish accessory collections.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Popular Collections Slider (Bounded / Standard Scroll) -->
+  <section class="notable-sales">
+    <div class="sales-header">
+      <h2>Popular Collections</h2>
+      <div class="slider-controls">
+        <button class="slider-btn prev-btn" id="salesPrev" aria-label="Previous Items">←</button>
+        <button class="slider-btn next-btn" id="salesNext" aria-label="Next Items">→</button>
+      </div>
+    </div>
+
+    <div class="sales-slider-track" id="salesTrack">
+      
+      <div class="card glass-card slider-item">
+        <div class="card-img-wrapper">
+          <img src="media/Featured Pics 01.webp" alt="Heritage Glamour Collection">
+        </div>
+        <div class="card-body">
+          <div class="card-title">Heritage Glamour Collection</div>
+          <div class="card-location">Premier Customer Favorite</div>
+          <div class="card-price">Modern Filipiniana Essential</div>
+        </div>
+      </div>
+
+      <div class="card glass-card slider-item">
+        <div class="card-img-wrapper">
+          <img src="media/Featured Pics 09.webp" alt="Kids' Career Collection">
+        </div>
+        <div class="card-body">
+          <div class="card-title">Kids' Career Collection</div>
+          <div class="card-location">Top Rated Kid Choice</div>
+          <div class="card-price">Best Value Costume</div>
+        </div>
+      </div>
+
+      <div class="card glass-card slider-item">
+        <div class="card-img-wrapper">
+          <img src="media/Featured Pics 04.webp" alt="Buwan ng Wika Collection">
+        </div>
+        <div class="card-body">
+          <div class="card-title">Buwan ng Wika Collection</div>
+          <div class="card-location">Top-Rated Cultural Choice</div>
+          <div class="card-price">Authentic Heritage Wear</div>
+        </div>
+      </div>
+
+      <div class="card glass-card slider-item">
+        <div class="card-img-wrapper">
+          <img src="media/Featured Pics 03.webp" alt="Little Barong Tagalog">
+        </div>
+        <div class="card-body">
+          <div class="card-title">Little Barong Tagalog</div>
+          <div class="card-location">Best-Selling Formal Outfit</div>
+          <div class="card-price">Complete Heritage Pick</div>
+        </div>
+      </div>
+
+      <div class="card glass-card slider-item">
+        <div class="card-img-wrapper">
+          <img src="media/Featured Pics 08.webp" alt="Storybook Collection">
+        </div>
+        <div class="card-body">
+          <div class="card-title">Storybook Collection</div>
+          <div class="card-location">Top-Rated Magical Choice</div>
+          <div class="card-price">Enchanted Dress-Up Value</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Core Values Section (Side-by-Side Row Layout) -->
+<section class="values-section">
+  <p class="section-label">OUR CORE VALUES</p>
+  <h2>What S.H.O.P.P.I.N.K. Stands For</h2>
+
+  <div class="values-marquee-wrapper">
+    <div class="values-marquee-track">
+
+      <!-- Value Item 1: S -->
+      <div class="value-card glass-card">
+        <div class="value-letter">S</div>
+        <div class="value-content">
+          <h3>Service First</h3>
+          <p>We always prioritize the happiness and needs of our customers.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 2: H -->
+      <div class="value-card glass-card">
+        <div class="value-letter">H</div>
+        <div class="value-content">
+          <h3>Honesty</h3>
+          <p>We are truthful in our products, prices, and services.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 3: O -->
+      <div class="value-card glass-card">
+        <div class="value-letter">O</div>
+        <div class="value-content">
+          <h3>Ownership</h3>
+          <p>We take responsibility for every decision and action.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 4: P -->
+      <div class="value-card glass-card">
+        <div class="value-letter">P</div>
+        <div class="value-content">
+          <h3>Professionalism</h3>
+          <p>We are courteous, well-organized, and responsible in all situations.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 5: P -->
+      <div class="value-card glass-card">
+        <div class="value-letter">P</div>
+        <div class="value-content">
+          <h3>Passion</h3>
+          <p>We do our work with enthusiasm and genuine care.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 6: I -->
+      <div class="value-card glass-card">
+        <div class="value-letter">I</div>
+        <div class="value-content">
+          <h3>Innovation</h3>
+          <p>We continuously look for better ways to serve our customers.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 7: N -->
+      <div class="value-card glass-card">
+        <div class="value-letter">N</div>
+        <div class="value-content">
+          <h3>Never Stop Improving</h3>
+          <p>We always strive to improve our business and services.</p>
+        </div>
+      </div>
+
+      <!-- Value Item 8: K -->
+      <div class="value-card glass-card">
+        <div class="value-letter">K</div>
+        <div class="value-content">
+          <h3>Kindness</h3>
+          <p>We treat every customer like family.</p>
+        </div>
+      </div>
+
+      <!-- Duplicated Set for Seamless Loop -->
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">S</div>
+        <div class="value-content">
+          <h3>Service First</h3>
+          <p>We always prioritize the happiness and needs of our customers.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">H</div>
+        <div class="value-content">
+          <h3>Honesty</h3>
+          <p>We are truthful in our products, prices, and services.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">O</div>
+        <div class="value-content">
+          <h3>Ownership</h3>
+          <p>We take responsibility for every decision and action.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">P</div>
+        <div class="value-content">
+          <h3>Professionalism</h3>
+          <p>We are courteous, well-organized, and responsible in all situations.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">P</div>
+        <div class="value-content">
+          <h3>Passion</h3>
+          <p>We do our work with enthusiasm and genuine care.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">I</div>
+        <div class="value-content">
+          <h3>Innovation</h3>
+          <p>We continuously look for better ways to serve our customers.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">N</div>
+        <div class="value-content">
+          <h3>Never Stop Improving</h3>
+          <p>We always strive to improve our business and services.</p>
+        </div>
+      </div>
+
+      <div class="value-card glass-card" aria-hidden="true">
+        <div class="value-letter">K</div>
+        <div class="value-content">
+          <h3>Kindness</h3>
+          <p>We treat every customer like family.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
+</section>
+
+  <!-- Vision & Mission Section -->
+  <section class="vision-mission">
+    <div class="vm-container">
+      <div class="vm-card glass-card">
+        <span class="vm-subtitle">OUR VISION</span>
+        <h2>The Shoppink Standard</h2>
+        <p>To become one of the most trusted and preferred shopping destinations, providing quality products, affordable prices, and an excellent shopping experience that brings happiness and value to every customer.</p>
+      </div>
+
+      <div class="vm-card glass-card">
+        <span class="vm-subtitle">OUR MISSION</span>
+        <h2>Committed To You</h2>
+        <ul class="mission-list">
+          <li>Providing quality products at affordable prices.</li>
+          <li>Delivering excellent and friendly customer service.</li>
+          <li>Creating a convenient and enjoyable shopping experience.</li>
+          <li>Building lasting relationships through honesty, trust, and consistency.</li>
+          <li>Continuously improving our products, services, and promotions to better serve our community.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      
+      <details class="faq-item glass-card">
+        <summary>How can I place an order with Shoppink Boutique?</summary>
+        <p>You can send us a direct message or fill out our contact form below! Our friendly team will assist you immediately with prices, availability, and delivery details.</p>
+      </details>
+
+      <details class="faq-item glass-card">
+        <summary>Are your products guaranteed high quality?</summary>
+        <p>Yes! Driven by our commitment to Honesty and Service First, we personally inspect every item to ensure you receive excellent value and quality.</p>
+      </details>
+
+      <details class="faq-item glass-card">
+        <summary>What payment and shipping options do you offer?</summary>
+        <p>We offer multiple convenient payment options and direct shipping options nationwide to give you an enjoyable and hassle-free shopping experience.</p>
+      </details>
+
+    </div>
+  </section>
+
+<!-- Store Locator / Branch Selector Section -->
+  <section class="store-locator-section">
+    <div class="store-selector-wrapper">
+      <h2 class="store-selector-title">Visit Our Branches</h2>
+      <p class="store-selector-subtitle">Select a branch below to view its location on the map</p>
+
+      <div class="store-selector-container">
+        <!-- Store Selection List -->
+        <div class="store-list" id="storeList">
+          <div 
+            class="store-card active" 
+            data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87291.98363892346!2d121.06004167072182!3d14.780765290797842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a90075a3d4e3%3A0x36bd66d9acd89c0d!2sShoppink!5e0!3m2!1sen!2sph!4v1788918951603!5m2!1sen!2sph"
+          >
+            <h3>Shoppink - Branch 1</h3>
+            <p>Samaveco, Sapang Palay</p>
+          </div>
+
+          <div 
+            class="store-card" 
+            data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87286.88622918178!2d120.97774393114165!3d14.793440494062057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397af0041830293%3A0x2e7c0d934c03996b!2sShoppink!5e0!3m2!1sen!2sph!4v1788918983911!5m2!1sen!2sph"
+          >
+            <h3>Shoppink - Branch 2</h3>
+            <p>Catmon</p>
+          </div>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-wrapper">
+          <iframe 
+            id="activeMap" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87291.98363892346!2d121.06004167072182!3d14.780765290797842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a90075a3d4e3%3A0x36bd66d9acd89c0d!2sShoppink!5e0!3m2!1sen!2sph!4v1788918951603!5m2!1sen!2sph" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      
+      <details class="faq-item glass-card">
+        <summary>How can I place an order with Shoppink Boutique?</summary>
+        <p>You can send us a direct message or fill out our contact form below! Our friendly team will assist you immediately with prices, availability, and delivery details.</p>
+      </details>
+
+      <details class="faq-item glass-card">
+        <summary>Are your products guaranteed high quality?</summary>
+        <p>Yes! Driven by our commitment to Honesty and Service First, we personally inspect every item to ensure you receive excellent value and quality.</p>
+      </details>
+
+      <details class="faq-item glass-card">
+        <summary>What payment and shipping options do you offer?</summary>
+        <p>We offer multiple convenient payment options and direct shipping options nationwide to give you an enjoyable and hassle-free shopping experience.</p>
+      </details>
+
+    </div>
+  </section>
+
+<!-- Facebook Contact & Social CTA Section -->
+  <section class="contact" id="contact">
+    <div class="facebook-cta-card glass-card">
+      <div class="facebook-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="facebook-svg">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+      </div>
+      <h2>Connect With Us on Facebook!</h2>
+      <p class="contact-subtitle">
+        Have questions about our latest collections or want to place an order? Follow our official Facebook page and send us a direct message—we treat every customer like family!
+      </p>
+      
+      <div class="facebook-action-buttons">
+        <a 
+          href="https://www.facebook.com/profile.php?id=61562558482045" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-facebook"
+        >
+          Follow Us on Facebook
+        </a>
+        <a 
+          href="https://m.me/61562558482045" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-messenger"
+        >
+          Send Direct Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer glass-panel">
+    <div class="footer-container">
+      
+      <div class="footer-col brand-col">
+        <span class="brand-name footer-brand">SHOPPINK <span>BOUTIQUE</span></span>
+        <p class="tagline">Providing quality products, affordable prices, and exceptional shopping experiences.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+        <p>Treating every customer like family ❤️</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="legal-disclaimer">
+        © 2026 Shoppink Boutique. All Rights Reserved. Built with Passion & Kindness.
+      </p>
+    </div>
+  </footer>
+
+<script>
+    // 1. Sticky Navbar Scroll Blur Effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (nav) {
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+    });
+
+// 2. Standard (Bounded) Carousel Slider Logic with Disabled State Styling
+(function() {
+  const track = document.getElementById('salesTrack');
+  const prevBtn = document.getElementById('salesPrev');
+  const nextBtn = document.getElementById('salesNext');
+
+  if (track && prevBtn && nextBtn) {
+    const getStepWidth = () => {
+      const item = track.querySelector('.slider-item');
+      return item ? item.offsetWidth + 32 : 0; // Item width + gap
+    };
+
+    // Helper to evaluate scroll position and set disabled status
+    const updateButtons = () => {
+      const scrollLeft = track.scrollLeft;
+      const maxScrollLeft = track.scrollWidth - track.clientWidth;
+
+      // Disable prevBtn if at or near the start (index 0)
+      if (scrollLeft <= 5) {
+        prevBtn.disabled = true;
+      } else {
+        prevBtn.disabled = false;
+      }
+
+      // Disable nextBtn if at or near the end (last card)
+      if (scrollLeft >= maxScrollLeft - 5) {
+        nextBtn.disabled = true;
+      } else {
+        nextBtn.disabled = false;
+      }
+    };
+
+    // Button Click Handlers
+    nextBtn.addEventListener('click', () => {
+      track.scrollBy({ left: getStepWidth(), behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      track.scrollBy({ left: -getStepWidth(), behavior: 'smooth' });
+    });
+
+    // Listen to scroll & window resize events to recalculate button status
+    track.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+
+    // Initial check on load
+    updateButtons();
+  }
+})();
+
+    // 3. Store Branch Map Switcher Logic
+    (function() {
+      const storeCards = document.querySelectorAll('.store-card');
+      const activeMap = document.getElementById('activeMap');
+
+      if (storeCards.length > 0 && activeMap) {
+        storeCards.forEach(card => {
+          card.addEventListener('click', () => {
+            storeCards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+
+            const newMapSrc = card.getAttribute('data-map-src');
+            if (newMapSrc) {
+              activeMap.setAttribute('src', newMapSrc);
+            }
+          });
+        });
+      }
+    })();
+  </script>
+
 </body>
 </html>
